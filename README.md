@@ -1,4 +1,4 @@
 dotfiles
 ========
 
-My dotfiles for Mac
+My dotfiles & some binary for Mac 

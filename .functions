@@ -53,3 +53,16 @@ function phpserver() {
 	sleep 1 && open "http://${ip}:${port}/" &
 	php -S "${ip}:${port}"
 }
+
+# Worklogs journal 
+function worklog() {
+	if [ ! -f ~/worklogs/worklog_$(date +%y-%m-%d).log ]; then
+		touch ~/worklogs/worklog_$(date +%y-%m-%d).log
+	fi
+
+	if [ $# -ne 1 ]; then
+		vi ~/worklogs/worklog_$(date +%y-%m-%d).log
+	else
+		echo $1 >> ~/worklogs/worklog_$(date +%y-%m-%d).log
+	fi
+}

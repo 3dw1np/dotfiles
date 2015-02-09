@@ -13,6 +13,10 @@ alias d="cd ~/Dropbox"
 alias p="cd ~/Projects"
 alias g="git"
 
+# MAMP
+alias mysql="/Applications/MAMP/Library/bin/mysql"
+alias apachectl="/Applications/MAMP/Library/bin/apachectl"
+
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
         colorflag="--color"
